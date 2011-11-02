@@ -12,10 +12,9 @@ use Time::HiRes;
 
 my $fqfile = '';
 my $N = 1;
-my $p1file ='';	#'/home/devel/talioto/proj-dev-tal/GAG/assembly_evaluation/sample_qual/lynx621D2AAXX_p1.quals.txt';
-my $p2file ='';	#'/home/devel/talioto/proj-dev-tal/GAG/assembly_evaluation/sample_qual/lynx621D2AAXX_p2.quals.txt';
-#my $genome_mfa = '/scratch/devel/talioto/assembly/dnGASP/sim/sim_genome_final.fa';
-#test sequence /project/devel/talioto/GAG/assembly_evaluation/simulate_reads/test.fa
+my $p1file ='';
+my $p2file ='';
+
 
 my $genome_mfa = '/home/devel/talioto/data/sim_genome_final.fa';
 my $xcov = 50;
@@ -32,11 +31,11 @@ my $minreadlength = $mprl;
 my $sdpct = 0.08;
 my $printGC = 0;
 my $bound = 0;
-my $pehist = '/project/devel/talioto/GAG/assembly_evaluation/simulate_reads/insert_hist.txt';
+my $pehist = 'insert_hist.txt';
 my $minpelen = 150;
 my $filetag = $$;
 my $mp_contamination_rate = 0.05; #0.05;
-my $qdir = '/project/devel/talioto/GAG/assembly_evaluation/sample_qual/lynx';
+my $qdir = './quals';
 my $BP=0;
 my $genome_size = 0;
 my $loc_in_id = 0;
